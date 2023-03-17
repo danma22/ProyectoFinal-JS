@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Danma | Dashboard</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="dashboard.html" class="nav-link">Home</a>
+      </li>
+    </ul>
+
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="dashboard.html" class="brand-link">
+      <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">Danma Site</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Admin</a>
+        </div>
+      </div>
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item">
+            <a href="dashboard.html" class="nav-link">
+              <i class="nav-icon fas fa-home"></i>
+              <p>
+                Dashboard
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Registros
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="regUsuarios.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Usuarios</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="regClientes.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Clientes</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="regCategoriasC.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Categorias de clientes</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="regProveedores.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Proveedores</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="regCategoriasP.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Categorias de proveedores</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="regProductos.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Productos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="regCategorias.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Categorias de producto</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Products -->
+          <li class="nav-item">
+            <a href="products.html" class="nav-link">
+              <i class="nav-icon fas fa-boxes"></i>
+              <p>
+                Productos
+              </p>
+            </a>
+          </li>
+
+          <!-- Datatables -->
+          <li class="nav-item">
+            <a href="data.html" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
+              <p>
+                DataTables
+              </p>
+            </a>
+          </li>
+
+          <!-- Tabla de clientes -->
+          <li class="nav-item">
+            <a href="clientes.html" class="nav-link">
+              <i class="nav-icon fas fa-users"></i>
+              <p>
+                Clientes
+              </p>
+            </a>
+          </li>
+
+          <!-- Tabla de proveedores -->
+          <li class="nav-item">
+            <a href="proveedores.html" class="nav-link">
+              <i class="nav-icon fas fa-user-tie"></i>
+              <p>
+                Proveedores
+              </p>
+            </a>
+          </li>
+
+          <!-- Solicitud de empleo -->
+          <li class="nav-item">
+            <a href="solicitudEmpleo.html" class="nav-link active">
+              <i class="nav-icon fab fa-wpforms"></i>
+              <p>
+                Solicitud de empleo
+              </p>
+            </a>
+          </li>
+
+          <!-- Practica 3: Portafolio -->
+          <li class="nav-item">
+            <a href="http://danma.me/practica3-js/" target="_blank" class="nav-link">
+              <i class="nav-icon fas fa-briefcase"></i>
+              <p>
+                Portafolio personal
+              </p>
+            </a>
+          </li>
+
+          <!-- Practica 4: Galeria -->
+          <li class="nav-item">
+            <a href="http://danma.me/practica4-js/" target="_blank" class="nav-link">
+              <i class="nav-icon far fa-images"></i>
+              <p>
+                Galeria
+              </p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Solicitud de empleo</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
+              <li class="breadcrumb-item active">Solicitud de empleo</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- left column -->
+          <div class="col-md-12">
+            <!-- /.card -->
+            <!-- Horizontal Form -->
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Solicitud de empleo</h3>
+              </div>
+              <!-- /.card-header -->
+
+              <!-- Formulario de solicitud de empleo -->
+              <form class="form-horizontal" method="post" id="solicitudForms">
+                <div class="card-body">
+                  <div class="form-group">
+                    <label for="puesto">Puesto que solicita </label>
+                    <input type="text" class="form-control" id="puesto" placeholder="Puesto que está solicitando">
+                  </div>
+
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <div class="form-group">
+                        <label for="sueldo">Sueldo Mensual deseado </label>
+                        <input type="number" class="form-control" id="sueldo" placeholder="$999999.99">
+                      </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                      <div class="form-group">
+                        <label for="date">Fecha</label>
+                        <input type="date" class="form-control" id="date" placeholder="Clave de producto">
+                      </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                      <div class="form-group">
+                        <label for="sueldoApr">Sueldo Mensual Aprobado </label>
+                        <input type="number" class="form-control" id="sueldoApr" placeholder="$999999.99">
+                      </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                      <div class="form-group">
+                        <label for="dateCon">Fecha de contratación</label>
+                        <input type="date" class="form-control" id="dateCon" placeholder="Clave de producto">
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Datos personales-->
+                  <br>
+                  <h4>Datos personales</h4>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <div class="form-group">
+                        <label for="apPat">Apellido paterno</label>
+                        <input type="text" class="form-control" id="apPat" placeholder="Ingresa el apellido paterno">
+                      </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                      <div class="form-group">
+                        <label for="apMat">Apellido materno</label>
+                        <input type="text" class="form-control" id="apMat" placeholder="Ingresa el apellido materno">
+                      </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                      <div class="form-group">
+                        <label for="name">Nombre(s)</label>
+                        <input type="text" class="form-control" id="name" placeholder="Ingresa el nombre">
+                      </div>
+                    </div>
+
+                    <div class="col-sm-1">
+                      <div class="form-group">
+                        <label for="age">Edad</label>
+                        <input type="number" class="form-control" id="age" placeholder="13 ...">
+                      </div>
+                    </div>
+
+                    <div class="col-sm-2">
+                      <label for="">Sexo</label>
+                      <div class="form-group">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="sexo" id="male">
+                          <label class="form-check-label" for="male">Masculino</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="sexo" id="female">
+                          <label class="form-check-label" for="female">Femenino</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <div class="form-group">
+                        <label for="address">Domicilio</label>
+                        <input type="text" class="form-control" id="address" placeholder="Escribe tu domicilio">
+                      </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                      <div class="form-group">
+                        <label for="col">Colonia</label>
+                        <input type="text" class="form-control" id="col" placeholder="Ingresa tu colonia">
+                      </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                      <div class="form-group">
+                        <label for="CP">Código postal</label>
+                        <input type="text" class="form-control" id="CP" placeholder="Ingresa tu código postal">
+                      </div>
+                    </div>
+
+                    <div class="col-sm-1">
+                      <div class="form-group">
+                        <label for="phone">Teléfono</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="XXX XXX XXXX">
+                      </div>
+                    </div>
+
+                    <div class="col-sm-2">
+                      <div class="form-group">
+                        <label for="birth">Fecha de nacimiento</label>
+                        <input type="date" class="form-control" id="birth" placeholder="Ingresa tu fecha de nacimiento">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <div class="form-group">
+                        <label for="cityState">Ciudad, Estado</label>
+                        <input type="text" class="form-control" id="cityState" placeholder="Cd. Victoria, Tamps ...">
+                      </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                      <div class="form-group">
+                        <label for="birthPlace">Lugar de nacimiento</label>
+                        <input type="text" class="form-control" id="birthPlace" placeholder="Ingresa tu lugar de nacimiento">
+                      </div>
+                    </div>
+
+                    <div class="col-sm-2">
+                      <div class="form-group">
+                        <label for="nac">Nacionalidad</label>
+                        <input type="text" class="form-control" id="nac" placeholder="Ingresa tu nacionalidad">
+                      </div>
+                    </div>
+
+                    <div class="col-sm-2">
+                      <div class="form-group">
+                        <label for="height">Estatura (m)</label>
+                        <input type="number" class="form-control" id="height" min="0" step="0.01" value="1.70" placeholder="1.70">
+                      </div>
+                    </div>
+
+                    <div class="col-sm-2">
+                      <div class="form-group">
+                        <label for="weight">Peso (kg)</label>
+                        <input type="number" class="form-control" id="weight" min="0" step="0.01" value="70.0" placeholder="70">
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <label for="">Vive con</label>
+                      <div class="form-group row">
+                        <div class="col-sm-3">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="vivecon" id="liveParents">
+                            <label class="form-check-label" for="liveParents">Sus padres</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="vivecon" id="liveFamily">
+                            <label class="form-check-label" for="liveFamily">Su familia</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="vivecon" id="liveRelative">
+                            <label class="form-check-label" for="liveRelative">Parientes</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="vivecon" id="liveAlone">
+                            <label class="form-check-label" for="liveAlone">Solo</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                      <label for="">Personas que dependen de usted</label>
+                      <div class="form-group row">
+                        <div class="col-sm-3">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="dependen" id="depChild">
+                            <label class="form-check-label" for="depChild">Hijos</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="dependen" id="depConyuge">
+                            <label class="form-check-label" for="depConyuge">Cónyuge</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="dependen" id="depParents">
+                            <label class="form-check-label" for="depParents">Padres</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="dependen" id="depOthers">
+                            <label class="form-check-label" for="depOthers">Otros</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                      <label for="">Estado civil</label>
+                      <div class="form-group row">
+                        <div class="col-sm-3">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="estadocivil" id="ecSoltero">
+                            <label class="form-check-label" for="ecSoltero">Soltero</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="estadocivil" id="ecCasado">
+                            <label class="form-check-label" for="ecCasado">Casado</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="estadocivil" id="ecOtro">
+                            <label class="form-check-label" for="ecOtro">Otro</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Documentación-->
+                  <br>
+                  <br>
+                  <h4>Documentación</h4>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label for="curp">Clave Única de Registro de Población</label>
+                        <input type="text" class="form-control" id="curp" placeholder="Escribe tu CURP">
+                      </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label for="afore">AFORE</label>
+                        <input type="text" class="form-control" id="afore" placeholder="Ingresa tu AFORE">
+                      </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label for="rfc">Registro Federal de Contribuyentes</label>
+                        <input type="text" class="form-control" id="rfc" placeholder="Ingresa tu RFC">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label for="nss">Número de Seguridad Social</label>
+                        <input type="text" class="form-control" id="nss" placeholder="Escribe tu NSS">
+                      </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label for="cartilla">No. Cartilla de Servicio Militar</label>
+                        <input type="text" class="form-control" id="cartilla" placeholder="Ingresa tu número de cartilla">
+                      </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label for="pasaporte">Pasaporte No.</label>
+                        <input type="text" class="form-control" id="pasaporte" placeholder="Ingresa tu no. de pasaporte">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <label for="">Tiene licencia de manejo</label>
+                      <div class="form-group row">
+                        <div class="col-sm-5">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="licencia" id="noLicencia">
+                            <label class="form-check-label" for="noLicencia">No</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-5">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="licencia" id="siLicencia">
+                            <label class="form-check-label" for="siLicencia">Si</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label for="infoLicencia">Clase y número de licencia</label>
+                        <input type="text" class="form-control" id="infoLicencia" placeholder="Clase y número de licencia">
+                      </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label for="docAbroad">Siendo extranjero que documentos te permiten trabajar en el país</label>
+                        <input type="text" class="form-control" id="docAbroad" placeholder="Documentos aprobatorios">
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <!-- Estado de salud y hábitos personales -->
+                  <br>
+                  <br>
+                  <h4>Estado de salud y hábitos personales</h4>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <label for="">¿Cómo consideras tu estado de salud?</label>
+                      <div class="form-group row">
+                        <div class="col-sm-4">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="salud" id="buenoSalud">
+                            <label class="form-check-label" for="buenoSalud">Bueno</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="salud" id="regularSalud">
+                            <label class="form-check-label" for="regularSalud">Regular</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="salud" id="maloSalud">
+                            <label class="form-check-label" for="maloSalud">Malo</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                      <label for="">¿Padece alguna enfermedad crónica?</label>
+                      <div class="form-group row">
+                        <div class="col-sm-4">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="salud" id="noCronico">
+                            <label class="form-check-label" for="buenoSalud">No</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="salud" id="siCronico">
+                            <label class="form-check-label" for="regularSalud">Si</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label for="explicarCronico">Si la respuesta fue si, explique</label>
+                        <input type="text" class="form-control" id="explicarCronico" placeholder="Explique">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label for="practicaDep">¿Practica Ud. algún deporte?</label>
+                        <input type="text" class="form-control" id="practicaDep" placeholder="Futbol, Basquetbol, ...">
+                      </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label for="perteneceClub">¿Permanece a algún Club Social o Deportivo?</label>
+                        <input type="text" class="form-control" id="perteneceClub" placeholder="Club Deportivo La Salle, Club Campestre, ...">
+                      </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label for="hobby">¿Cuál es su pasatiempo favorito?</label>
+                        <input type="text" class="form-control" id="hobby" placeholder="Jugar golf, paesar en bicicleta, ...">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="metaVida">¿Cuál es su meta en al vida?</label>
+                    <input type="text" class="form-control" id="metaVida" placeholder="Explique ...">
+                  </div>
+
+
+                  <!-- Datos familiares -->
+                  <br>
+                  <br>
+                  <h4>Datos familiares</h4>
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>Nombre</th>
+                        <th style="width: 10px">¿Vivo?</th>
+                        <th>Domicilio</th>
+                        <th>Ocupación</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="form-group">
+                            <label for="nameFather">Padre</label>
+                            <input type="text" class="form-control" id="nameFather" placeholder="Nombre del padre...">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <br>
+                            <input type="checkbox" class="form-control" id="vivoFather">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <br>
+                            <input type="text" class="form-control" id="domFather" placeholder="Domicilio del padre...">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <br>
+                            <input type="text" class="form-control" id="ocuFather" placeholder="Ocupación del padre...">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="form-group">
+                            <label for="nameMother">Madre</label>
+                            <input type="text" class="form-control" id="nameMother" placeholder="Nombre de la madre...">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <br>
+                            <input type="checkbox" class="form-control" id="vivoMother">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <br>
+                            <input type="text" class="form-control" id="domMother" placeholder="Domicilio de la madre...">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <br>
+                            <input type="text" class="form-control" id="ocuMother" placeholder="Ocupación de la madre...">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="form-group">
+                            <label for="nameMother">Esposo(a)</label>
+                            <input type="text" class="form-control" id="nameConyuge" placeholder="Nombre del esposo(a)...">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <br>
+                            <input type="checkbox" class="form-control" id="vivoConyuge">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <br>
+                            <input type="text" class="form-control" id="domConyuge" placeholder="Domicilio del esposo(a)...">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <br>
+                            <input type="text" class="form-control" id="ocuConyuge" placeholder="Ocupación del esposo(a)...">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="form-group">
+                            <label for="children">Nombre y edades de los hijos</label>
+                            <input type="text" class="form-control" id="children" placeholder="Ingrese los datos">
+                          </div>
+                        </td>
+                        
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <!-- Escolaridad -->
+                  <br>
+                  <br>
+                  <h4>Escolaridad</h4>
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>Nombre de la escuela</th>
+                        <th>Domicilio (Estado y municipio o colonia)</th>
+                        <th style="width: 100px">De</th>
+                        <th style="width: 100px">A</th>
+                        <th>Titulo recibido</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="form-group">
+                            <label for="primaria">Primaria</label>
+                            <input type="text" class="form-control" id="primaria">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <br>
+                            <input type="text" class="form-control" id="domPrimaria">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <br>
+                            <input type="number" class="form-control" id="dePrimaria">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <br>
+                            <input type="number" class="form-control" id="aPrimaria">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <br>
+                            <input type="text" class="form-control" id="tituloPrimaria">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="form-group">
+                            <label for="secu">Secundaria</label>
+                            <input type="text" class="form-control" id="secu">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <br>
+                            <input type="text" class="form-control" id="domSecu">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <br>
+                            <input type="number" class="form-control" id="deSecu">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <br>
+                            <input type="number" class="form-control" id="aSecu">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <br>
+                            <input type="text" class="form-control" id="tituloSecu">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="form-group">
+                            <label for="secu">Preparatoria</label>
+                            <input type="text" class="form-control" id="prepa">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <br>
+                            <input type="text" class="form-control" id="domPrepa">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <br>
+                            <input type="number" class="form-control" id="dePrepa">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <br>
+                            <input type="number" class="form-control" id="aPrepa">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <br>
+                            <input type="text" class="form-control" id="tituloPrepa">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="form-group">
+                            <label for="pro">Profesional</label>
+                            <input type="text" class="form-control" id="pro">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <br>
+                            <input type="text" class="form-control" id="domPro">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <br>
+                            <input type="number" class="form-control" id="dePro">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <br>
+                            <input type="number" class="form-control" id="aPro">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <br>
+                            <input type="text" class="form-control" id="tituloPro">
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <h6>Estudios que esta efectuando en la actualidad</h6>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <div class="form-group">
+                        <label for="escuelaActual">Escuela</label>
+                        <input type="text" class="form-control" id="escuelaActual">
+                      </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                      <div class="form-group">
+                        <label for="horario">Horario</label>
+                        <input type="text" class="form-control" id="horario">
+                      </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                      <div class="form-group">
+                        <label for="carrera">Curso o Carrera</label>
+                        <input type="text" class="form-control" id="carrera">
+                      </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                      <div class="form-group">
+                        <label for="grado">Grado</label>
+                        <input type="text" class="form-control" id="grado">
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Conocimiento generales -->
+                  <br>
+                  <br>
+                  <h4>Conocimiento generales</h4>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="idiomas">Idioma que dominas</label>
+                        <input type="text" class="form-control" id="idiomas" placeholder="Ingles 80, Aleman 60">
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="funcOficina">Funciones de oficina que domina</label>
+                        <input type="text" class="form-control" id="funcOficina" placeholder="Trabajar con excel">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="equipo">Máquina de oficina y/o equipo de trabajo que maneje</label>
+                    <input type="text" class="form-control" id="equipo" placeholder="Impresora, servidores">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="funcOtros">Otros trabajos o funciones que domina</label>
+                    <input type="text" class="form-control" id="funcOtros" placeholder="Operaciones contables, etc">
+                  </div>
+
+
+                  <!-- Empleo actual o anteriores -->
+                  <br>
+                  <br>
+                  <h4>Empleo actual o anteriores</h4>
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>Concepto</th>
+                        <th>Empleo actual o último</th>
+                        <th>Empleo anterior</th>
+                        <th>Empleo anterior</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <label>Tiempo que prestó sus servicios</label>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="empAct10">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="empAnt10">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="empAnt20">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <label>Nombre de la empresa</label>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="empAct11">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="empAnt11">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="empAnt21">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <label>Domicilio</label>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="empAct12">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="empAnt12">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="empAnt22">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <label>Telefono</label>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="tel" class="form-control" id="empAct13">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="tel" class="form-control" id="empAnt13">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="tel" class="form-control" id="empAnt23">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <label>Puesto</label>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="empAct14">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="empAnt14">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="empAnt24">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <label>Sueldos</label>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="number" class="form-control" id="empAct15">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="number" class="form-control" id="empAnt15">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="number" class="form-control" id="empAnt25">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <label>Motivos de su separación</label>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="empAct16">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="empAnt16">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="empAnt26">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <label>Nombre de su jefe inmediato</label>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="empAct17">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="empAnt17">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="empAnt27">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <label>Actividades desempeñadas</label>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="empAct18">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="empAnt18">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="empAnt28">
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
+
+                  <!-- Referencias personales -->
+                  <br>
+                  <br>
+                  <h4>Referencias personales</h4>
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>Nombre</th>
+                        <th>Domicilio</th>
+                        <th>Teléfono</th>
+                        <th>Ocupación</th>
+                        <th>Tiempo de conocerse</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="nameRef1">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="domRef1">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="tel" class="form-control" id="telRef1">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="ocuRef1">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="timeRef1">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="nameRef2">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="domRef2">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="tel" class="form-control" id="telRef2">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="ocuRef2">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="timeRef2">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="nameRef3">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="domRef3">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="tel" class="form-control" id="telRef3">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="ocuRef3">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="timeRef3">
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+
+                  <!-- Datos generales -->
+                  <br>
+                  <br>
+                  <h4>Datos generales</h4>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <label for="">¿Cómo se entero de este empleo?</label>
+                      <div class="form-group row">
+                        <div class="col-sm-3">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="enterarEmpleo" id="anuncio">
+                            <label class="form-check-label" for="anuncio">Anuncio</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="enterarEmpleo" id="otromedio">
+                            <label class="form-check-label" for="otromedio">Otro medio (anótelo)</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-check">
+                            <input type="text" class="form-control" id="explicarAnuncio">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <label for="">¿Tienes familiares y/o amigos que laboresn en esta empresa?</label>
+                      <div class="form-group row">
+                        <div class="col-sm-3">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="familyJob" id="noFamily">
+                            <label class="form-check-label" for="anuncio">No</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="familyJob" id="yesFamily">
+                            <label class="form-check-label" for="otromedio">SI (nómbrelos)</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-check">
+                            <input type="text" class="form-control" id="explicarFamilyJob">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <label for="">¿He estado afianzando?</label>
+                      <div class="form-group row">
+                        <div class="col-sm-3">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="afianzado" id="afianzadoNo">
+                            <label class="form-check-label" for="afianzadoNo">No</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="afianzado" id="afianzadoSi">
+                            <label class="form-check-label" for="afianzadoSi">Si (nombre de la compañia)</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-check">
+                            <input type="text" class="form-control" id="explicarAfianzado">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <label for="">¿Pertenece a algún sindicato?</label>
+                      <div class="form-group row">
+                        <div class="col-sm-3">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sindicato" id="sindicatoNo">
+                            <label class="form-check-label" for="sindicatoNo">No</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sindicato" id="sindicatoSi">
+                            <label class="form-check-label" for="sindicatoSi">SI (¿A cuál?)</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-check">
+                            <input type="text" class="form-control" id="explicarSindicato">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <label for="">¿Tiene seguro de vida?</label>
+                      <div class="form-group row">
+                        <div class="col-sm-3">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="seguro" id="seguroNo">
+                            <label class="form-check-label" for="seguroNo">No</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="seguro" id="seguroSi">
+                            <label class="form-check-label" for="seguroSi">Si (De que CIA)</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-check">
+                            <input type="text" class="form-control" id="explicarSeguro">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <label for="">¿Puede viajar?</label>
+                      <div class="form-group row">
+                        <div class="col-sm-3">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="viajar" id="viajarSi">
+                            <label class="form-check-label" for="viajarSi">Si</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="viajar" id="viajarNo">
+                            <label class="form-check-label" for="viajarNo">No (¿Razones?)</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-check">
+                            <input type="text" class="form-control" id="explicarViajar">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <label for="">¿Está dispuesto a cambiar de lugar de residencia?</label>
+                      <div class="form-group row">
+                        <div class="col-sm-3">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="residencia" id="residenciaSi">
+                            <label class="form-check-label" for="residenciaSi">Si</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="residencia" id="residenciaNo">
+                            <label class="form-check-label" for="residenciaNo">No (Razones)</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-check">
+                            <input type="text" class="form-control" id="explicarResidencia">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                    </div>
+                  </div>
+                  
+                </div>
+                <!-- /.card-body -->
+
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-primary float-right" id="guardarJSON">Guardar JSON</button>
+                </div>
+                <!-- /.card-footer -->
+              </form>
+            </div>
+            <!-- /.card -->
+
+          </div>
+          <!--/.col (left) -->
+          <!-- right column -->
+          
+          <!--/.col (right) -->
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> 3.2.0
+    </div>
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+
+<div class="modal fade" id="modal-danger">
+  <div class="modal-dialog">
+    <div class="modal-content bg-danger">
+      <div class="modal-header">
+        <h4 class="modal-title">Datos incorrectos</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="desc1">
+        
+      </div>
+      <div class="modal-footer justify-content-between">
+        <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+
+
+<div class="modal fade" id="modal-success">
+  <div class="modal-dialog">
+    <div class="modal-content bg-success">
+      <div class="modal-header">
+        <h4 class="modal-title">El usuario ha sido agregado exitosamente</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="desc2">
+        
+      </div>
+      <div class="modal-footer justify-content-between">
+        <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- bs-custom-file-input -->
+<script src="plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<!-- <script src="dist/js/demo.js"></script> -->
+
+<script src="js/solicitud.js"></script>
+<!-- Page specific script -->
+<script>
+/*$(function () {
+  bsCustomFileInput.init();
+});*/
+</script>
+</body>
+</html>
