@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Danma | Dashboard</title>
 
-  <!-- Google Font: Source Sans Pro -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Google Font: Source Sans Pro 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback"> -->
   <!-- Font Awesome -->
   <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
@@ -429,29 +429,29 @@
                     </div>
 
                     <div class="col-sm-4">
-                      <label for="">Personas que dependen de usted</label>
+                      <label for="">Personas que depende de usted</label>
                       <div class="form-group row">
                         <div class="col-sm-3">
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="dependen" id="depChild">
+                            <input class="form-check-input" type="radio" name="depende" id="depChild">
                             <label class="form-check-label" for="depChild">Hijos</label>
                           </div>
                         </div>
                         <div class="col-sm-3">
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="dependen" id="depConyuge">
+                            <input class="form-check-input" type="radio" name="depende" id="depConyuge">
                             <label class="form-check-label" for="depConyuge">Cónyuge</label>
                           </div>
                         </div>
                         <div class="col-sm-3">
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="dependen" id="depParents">
+                            <input class="form-check-input" type="radio" name="depende" id="depParents">
                             <label class="form-check-label" for="depParents">Padres</label>
                           </div>
                         </div>
                         <div class="col-sm-3">
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="dependen" id="depOthers">
+                            <input class="form-check-input" type="radio" name="depende" id="depOthers">
                             <label class="form-check-label" for="depOthers">Otros</label>
                           </div>
                         </div>
@@ -600,13 +600,13 @@
                       <div class="form-group row">
                         <div class="col-sm-4">
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="salud" id="noCronico">
+                            <input class="form-check-input" type="radio" name="cronico" id="noCronico">
                             <label class="form-check-label" for="buenoSalud">No</label>
                           </div>
                         </div>
                         <div class="col-sm-4">
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="salud" id="siCronico">
+                            <input class="form-check-input" type="radio" name="cronico" id="siCronico">
                             <label class="form-check-label" for="regularSalud">Si</label>
                           </div>
                         </div>
@@ -1436,6 +1436,7 @@
 
                 <div class="card-footer">
                   <button type="submit" class="btn btn-primary float-right" id="guardarJSON">Guardar JSON</button>
+                  <button type="button" class="btn btn-primary float-right" id="descargar">Descargar JSON</button>
                 </div>
                 <!-- /.card-footer -->
               </form>
@@ -1474,13 +1475,13 @@
   <div class="modal-dialog">
     <div class="modal-content bg-danger">
       <div class="modal-header">
-        <h4 class="modal-title">Datos incorrectos</h4>
+        <h4 class="modal-title">Campos incompletos</h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body" id="desc1">
-        
+        <p>Existen campos vacios en la solicitud</p>
       </div>
       <div class="modal-footer justify-content-between">
         <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
@@ -1511,6 +1512,14 @@
     <!-- /.modal-content -->
   </div>
   <!-- /.modal-dialog -->
+</div>
+
+<div id="loader-overlay" class="d-none">
+  <div id="loader-container" class="fixed-top fixed-bottom d-flex justify-content-center align-items-center">
+  <div class="spinner-border text-primary" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  </div>
 </div>
 
 
